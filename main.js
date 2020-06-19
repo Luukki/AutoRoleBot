@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 // Preset variables
-const token = "YourTokenHere";
+const token = "Njg3Mzc2MjU5NDQ5MzU2MzYy.XtZ5hg.GUzo-NOyuezaA8dk1RgW3DHo_VI";
 const prefix = "%";
 
 class Variables // class to store "global" variables TODO: This is a VERY ugly solution as this really only allows the bot to work on 1 server at a time
@@ -24,7 +24,7 @@ function Commands(msg)
 		case "toggle": // Toggles the bot on and off
 		{
 			v.enabled = !v.enabled;
-			if(v.enabled) // TODO: Maybe use inline-if
+            if(v.enabled) 
 				msg.channel.send("The bot is now on!");
 			else
 				msg.channel.send("The bot is now off!");
@@ -43,7 +43,7 @@ function Commands(msg)
 				msg.channel.send("Invalid prefix given!");
 			}
 		}
-		case "setrole": // Defines the role to add new users in
+		case "setrole": // Defines the role to add new users to
 		{
 			if(command[1] === "null")
 			{
