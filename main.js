@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 // Preset variables
-const token = "Njg3Mzc2MjU5NDQ5MzU2MzYy.XtZ5hg.GUzo-NOyuezaA8dk1RgW3DHo_VI";
+const token = "YourTokenHere";
 const prefix = "%";
 
 class Variables // class to store "global" variables TODO: This is a VERY ugly solution as this really only allows the bot to work on 1 server at a time
